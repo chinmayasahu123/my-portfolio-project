@@ -747,7 +747,7 @@ body.dark-mode nav {
   .hero-image {
     width: 250px;
     height: 250px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
 
   .hero-image img {
@@ -868,6 +868,7 @@ body.dark-mode nav {
     font-size: 1.6rem;
   }
 }
+
 
 
 
