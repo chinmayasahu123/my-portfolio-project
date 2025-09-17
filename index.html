@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmaya's Portfolio</title>
+  <link rel="stylesheet" href="index.css"> <!-- External CSS link -->
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <span>&lt;/&gt;</span> Chinmaya's Portfolio
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <section class="hero">
+  <div class="hero-text">
+    <h1 class="gradient-text">Chinmaya Sahu</h1>
+    <h2>I Develop Websites</h2>
+    <p>
+      Passionate about creating modern and responsive web applications.<br>
+      Skilled in front-end and back-end technologies.<br>
+      Always eager to learn and build creative solutions.
+    </p>
+    <a href="Chinmaya sahu resume.pdf" class="btn" target="_blank">View Resume</a>
+  </div>
+  <div class="hero-image">
+    <div class="image-bg"></div>
+    <img src="images/myImage.jpg" alt="Chinmaya Photo">
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+  <div class="skills-left">
+    <h2 id="about"><span>|</span> A Bit About Me & My Skills</h2>
+    <p>
+      I am a passionate and self-motivated web developer with a strong foundation in the Full stack. 
+      I enjoy solving problems through code and building interactive, responsive applications that provide smooth and engaging user experiences. 
+    </p>
+    <p>
+      My journey in tech has been fueled by curiosity and a constant drive to learn new tools and technologies. 
+      Beyond coding, I actively participate in open-source communities and continuously seek opportunities to grow as a developer.
+    </p>
+  </div>
+
+  <div class="skills-right">
+    <div class="skill-box gradient-purple">
+      <h3>Programming Languages</h3>
+      <div class="icons">
+        <img src="https://img.icons8.com/color/48/javascript.png" alt="JS">
+        <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="java">
+      </div>
+    </div>
+
+    <div class="skill-box gradient-yellow">
+      <h3>Web Development</h3>
+      <div class="icons">
+        <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML">
+        <img src="https://img.icons8.com/color/48/css3.png" alt="CSS">
+        <img src="https://img.icons8.com/color/48/javascript.png" alt="JS">
+      </div>
+    </div>
+
+    <div class="skill-box gradient-red">
+      <h3>Tools</h3>
+      <div class="icons">
+        <img src="https://img.icons8.com/color/48/github--v1.png" alt="Git-hub">
+        <img src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="VSCode">
+        <img src="https://img.icons8.com/color/48/intellij-idea.png" alt="intellij-idea">
+      </div>
+    </div>
+
+    <div class="skill-box gradient-teal">
+      <h3>Other</h3>
+      <div class="icons">
+        <img src="data:image/png;base64,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" alt="oracle-pl-sql--v3">
+        <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Internships Section -->
+<section class="internships-timeline">
+  <h2><span>|</span> Internships</h2>
+
+  <div class="timeline">
+    <!-- Internship 1 -->
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>SalesForce Administrator</h3>
+        <p class="role">SalesForce Administrator</p>
+        <p class="duration">Nov 2023 – jan 2024</p>
+        <p>
+          Built Dashboards and learn about data managememnt and security reports and Service cloud.
+        </p>
+      </div>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Craw</h3>
+        <p class="role">Cybersecurity Intern Remote</p>
+        <p class="duration">Jun 2024 – Aug 2024</p>
+        <p>
+          Assisted in vulnerability assessment, penetration testing, and documentation of security measures.
+        </p>
+      </div>
+    </div>
+
+    <!-- Internship 3 -->
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Jspider</h3>
+        <p class="role">Full stack developer Training</p>
+        <p class="duration">Jul2025-Present</p>
+        <p>
+          Built responsive websites, optimized UI/UX, and learn java libraries
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section" id="projects">
+  <h2 class="projects-heading">My Favorite Collections</h2>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-box gradient-red-black">
+      <div class="project-left" data-aos="fade-right">
+        <img src="images/project1.png" alt="Ecommerce Screenshot">
+      </div>
+      <div class="project-right" data-aos="fade-left">
+        <h3>Ecommerce Red Store Website</h3>
+        <p>
+          A fully responsive ecommerce platform with cart, checkout, and user dashboard features. 
+          Designed with modern UI/UX and integrated payment options.
+        </p>
+        <div class="project-links">
+          <a href="https://redstore-ecommerce-project-1.onrender.com" target="_blank">🔗 Live</a>
+          <a href="https://github.com/chinmayasahu123" target="_blank">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/chinmaya-sahu-/" target="_blank">🌐 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-box gradient-pink-black">
+      <div class="project-left" data-aos="fade-right">
+        <img src="images/project2.png" alt="Food Villa Screenshot">
+      </div>
+      <div class="project-right" data-aos="fade-left">
+        <h3>Food Villa - Food Order App</h3>
+        <p>
+          A food ordering app designed with clean UI, allowing users to browse menus, 
+          place orders, and track delivery with smooth user experience.
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank">🔗 Live</a>
+          <a href="https://github.com/chinmayasahu123" target="_blank">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/chinmaya-sahu-/" target="_blank">🌐 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  
+  <div class="cert-container">
+    <!-- Certificate 1 -->
+    <div class="certificate" data-aos="zoom-in">
+      <img src="images/craw.jpg" alt="Certificate 1">
+      <h3>SalesForce Administrator Internship</h3>
+      <p>Issued by SalesForce</p>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certificate" data-aos="zoom-in" data-aos-delay="200">
+      <img src="images/salesforce.jpg" alt="Certificate 2">
+      <h3>Cybersecurity Internship</h3>
+      <p>Issued by Craw</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2 class="contact-heading">
+    🚀 Let's Create Something Amazing! ✨🔥
+  </h2>
+
+  <div class="contact-inner">
+    <!-- Left: Contact Form -->
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name ✍️" required>
+        <input type="email" name="email" placeholder="Email 📧" required>
+        <input type="text" name="phone" placeholder="Your Phone Number 📞">
+        <textarea name="message" rows="5" placeholder="Message 💬" required></textarea>
+        <button type="submit" class="btn-launch">🚀 Launch Message</button>
+      </form>
+    </div>
+
+    <!-- Right: Direct Links -->
+    <div class="contact-container contact-info">
+      <h3>📩 Direct Line</h3>
+      <p class="direct-email">chinmayasahu975@gmail.com</p>
+
+<h3>🌐 Connect with Me</h3>
+    <div class="icon-grid">
+      <a href="mailto:yourmail@gmail.com" class="icon-btn"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/917735324171" target="_blank" class="icon-btn"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/yourprofile" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/chinmaya-sahu-/" target="_blank" class="icon-btn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/chinmayasahu123" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+    </div>
+</div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>Chinmaya Sahu</h2>
+      <p>Fullstack Developer | Frontend Developer</p>
+    </div>
+
+    <div class="footer-right">
+      <h3>Connect with me</h3>
+      <div class="social-icons">
+        <a href="mailto:chinmayasahu975@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/chinmaya-sahu-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chinmayasahu123" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Chinmaya Sahu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation speed
+    once: true      // animation runs only once
+  });
+  
+  const toggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Default theme
+body.classList.add("dark-mode");
+
+// Toggle logic
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  body.classList.toggle("light-mode");
+
+  // Change icon
+  if (body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "🌙"; // moon icon
+  } else {
+    toggleBtn.textContent = "☀️"; // sun icon
+  }
+});
+</script>
+<!-- Load EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<!-- Your JS code -->
+<script src="index.js"></script>
+</body>
+</html>
