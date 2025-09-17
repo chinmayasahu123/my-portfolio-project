@@ -705,9 +705,11 @@ body.dark-mode nav {
 @media (max-width: 768px) {
   /* Navbar */
   nav {
+    display: flex;
     flex-direction: column;
-    padding: 15px 20px;
-    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;  
   }
 
   ul {
@@ -867,6 +869,7 @@ body.dark-mode nav {
     font-size: 1.6rem;
   }
 }
+
 
 
 
